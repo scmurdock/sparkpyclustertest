@@ -14,7 +14,7 @@ $ cat opt/spark-2.3.4-bin-hadoop2.7/logs/spark--org.apache.spark.deploy.master.M
 
 Look for a message similar to this: Starting Spark master at spark://67e5ccbadadd:7077
 
-$ SPARK_HOME/bin/spark-submit ~/sparkpytest/sparkpytest.py
+$ SPARK_HOME/bin/spark-submit ~/sparkpyclustertest/sparkpytest.py
 
 You should see a lot of console output, including a line similar to the following:
 
