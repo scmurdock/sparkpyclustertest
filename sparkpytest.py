@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 
-logFile = "/Users/seanmurdock/PythonProjects/sparkpytest/Test.txt"  # Should be some file on your system
+logFile = "/home/workspace/sparkpyclustertest/Test.txt"  # Should be some file on your system
 spark = SparkSession.builder.appName("SimpleApp").getOrCreate()
 logData = spark.read.text(logFile).cache()
 
