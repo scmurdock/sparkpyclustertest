@@ -1,24 +1,18 @@
-Submitting a Spark application to the Spark cluster using the project workspace:
+# Submitting a Spark application to the Spark cluster using the project workspace in the Spark Data Streaming Udacity Course:
 
-$SPARK_HOME/sbin/start-master.sh
+
+## Open a terminal and type the following command:
+$ $SPARK_HOME/sbin/start-master.sh
 
 After you type this command, you will see something similar to the following output:
 
-starting org.apache.spark.deploy.master.Master, logging to /opt/spark-2.3.4-bin-hadoop2.7/logs/spark--org.apache.spark.deploy.master.Master-1-67e5ccbadadd.out
+Starting Spark master at spark://67e5ccbadadd:7077
 
-To view the logs, you should cat the file mentioned in the output message.
-
-For example, if I received the sample message mentioned earlier, I would type
-
-$ cat opt/spark-2.3.4-bin-hadoop2.7/logs/spark--org.apache.spark.deploy.master.Master-1-67e5ccbadadd.out
-
-Look for a message similar to this: Starting Spark master at spark://67e5ccbadadd:7077
-
-Clone the repository to the workspace by typing this command:
+## Clone the repository to the workspace by typing this command:
 
 $ git clone https://github.com/scmurdock/sparkpyclustertest.git
 
-Next submit the sparkpytest.py script to the cluster
+## Submit the sparkpytest.py script to the cluster:
 
 $ SPARK_HOME/bin/spark-submit /home/workspace/sparkpyclustertest/sparkpytest.py | tee /home/workspace/sparkpyclustertest/logs/sparkpytest.log
 
@@ -29,8 +23,6 @@ Lines with a: 4, lines with b: 0
 
 This means the application finished running, and has produced the desired output
 
-
-
-Submitting a Spark application to the Spark cluster using Docker:
+## Want to get this running locally? Try running a Spark cluster, and submitting a Spark application to the cluster using Docker:
 
 See: https://github.com/scmurdock/sparkdockerclustertest.git
