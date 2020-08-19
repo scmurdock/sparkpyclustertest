@@ -20,7 +20,7 @@ $ git clone https://github.com/scmurdock/sparkpyclustertest.git
 
 Next submit the sparkpytest.py script to the cluster
 
-$ SPARK_HOME/bin/spark-submit /home/workspace/sparkpyclustertest/sparkpytest.py
+$ SPARK_HOME/bin/spark-submit /home/workspace/sparkpyclustertest/sparkpytest.py | tee /home/workspace/sparkpyclustertest/logs/sparkpytest.log
 
 You should see a lot of console output, including a line similar to the following:
 
