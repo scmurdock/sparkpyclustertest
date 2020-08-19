@@ -1,8 +1,8 @@
-Starting the Spark cluster in the workspace:
+Submitting a Spark application to the Spark cluster using the project workspace:
 
 $SPARK_HOME/sbin/start-master.sh
 
-After you type this command, you will see something to the following output:
+After you type this command, you will see something similar to the following output:
 
 starting org.apache.spark.deploy.master.Master, logging to /opt/spark-2.3.4-bin-hadoop2.7/logs/spark--org.apache.spark.deploy.master.Master-1-67e5ccbadadd.out
 
@@ -28,3 +28,9 @@ You should see a lot of console output, including a line similar to the followin
 Lines with a: 4, lines with b: 0
 
 This means the application finished running, and has produced the desired output
+
+
+
+Submitting a Spark application to the Spark cluster using Docker:
+
+See: https://github.com/scmurdock/sparkdockerclustertest.git
